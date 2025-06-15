@@ -11,6 +11,14 @@ uv pip install -r requirements-<CHANGE THIS TO MATCH YOUR OS>.txt
 
 If you don't have `uv` installed, you can install it using: [Installation Guide](https://docs.astral.sh/uv/getting-started/installation/#standalone-installer)
 
+Then...
+
+When you run an agent, the ADK needs to know who is requesting the model API calls. You can provide this information in one of two ways. 
+
+You can do one of the following and update the `.env` file in the root of this project:
+
+1. Provide a Gemini API key. [Get your free API key](https://aistudio.google.com/apikey)
+2. Authenticate your environment with Google Cloud credentials and associate your model API calls with a Vertex AI project and location.
 
 
 # HINT
