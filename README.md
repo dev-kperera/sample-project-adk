@@ -1,8 +1,17 @@
-# First, install following package using requirements.txt
+# FIRST THINGS FIRST
+Install following dependencies to run this project:
 
 ```shell
-pip install -r requirements.txt
+# Create a virtual environment
+uv venv
+
+# Install dependencies
+uv pip install -r requirements-<CHANGE THIS TO MATCH YOUR OS>.txt
 ```
+
+If you don't have `uv` installed, you can install it using: [Installation Guide](https://docs.astral.sh/uv/getting-started/installation/#standalone-installer)
+
+
 
 # HINT
 - Search for `#TODO` in the code to find the places where you need to update get this to work.
@@ -29,6 +38,8 @@ adk run my_google_search_agent
 # Inventory of Agents in this project:
 
 **google_search_agent**
+- This agent is designed to interact with Google Search and Google GenAI using "google_search" tool.
+
 
 **app_agent**
 - This agent is designed to interact with Google Search and Google GenAI. 
@@ -36,6 +47,7 @@ adk run my_google_search_agent
 - You can define an output schema for the agent, which allows you to specify the expected structure of the responses.
 - Use Pydantic schema classes to define the output schema.
 - When you define an output schema, you cannot use tools or agent transfers.
+
 
 **llm_auditor**: 
 - This agent is responsible for auditing the responses from the LLM. It uses sub-agents like critic and reviser to evaluate and improve the quality of the responses.

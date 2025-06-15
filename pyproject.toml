@@ -1,0 +1,7 @@
+[project]
+name = "sample-project-adk"
+version = "0.1.0"
+description = "A collection of samples that demonstrate Google Agent Development Kit (ADK)."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
