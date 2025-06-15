@@ -1,3 +1,6 @@
+# Agent Development Kit (ADK) Samples
+This repository contains a collection of samples that demonstrate how to use the Google Agent Development Kit (ADK) to build agents and multi-agent systems.
+
 # FIRST THINGS FIRST
 Install following dependencies to run this project:
 
